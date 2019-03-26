@@ -1,0 +1,175 @@
+/* Nullifier */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+    height:auto;
+}
+main{
+    height: 100vh;
+}
+.main{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    width: 94%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categorie {
+    background-color: #999;
+    margin: 2%;
+    width: 46%;
+    height: 91%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.img1{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    background: url(Img/1.jpg);
+
+}
+.img2{
+    width: 33%;
+    height: 100%;
+    background-image: url(Img/2.png);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    z-index: 5;
+
+}
+  ul {
+    position: relative;
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background:linear-gradient(90deg, #999, black);
+    position: fixed;
+    height: 6%;
+    z-index: 1;
+  }
+  ul img {
+    position: absolute;
+    float: right;
+    top:20%;
+  }
+  li a {
+    display: block;
+
+    text-align: center;
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+  } 
+  li a:hover{
+    color: black;
+  }
+  #menuburger{
+    position: absolute;
+    display: none;
+}
+  
+nav img:not(:first-child) {
+    width: 30px;
+    height:30px;
+    right: 5px;
+}
+@media screen and (max-width: 520px) {
+header nav {
+  position: relative;
+}
+#menuburger{
+    display: block;
+    top:1px;
+}
+nav ul li.visible{
+  display:block;
+}
+nav ul li{
+  display:none;
+}
+.propos{
+  top: 60%;
+  overflow: scroll;
+}
+}
+
+/* ===== FOOTER =====*/
+
+footer{
+  z-index: 3;
+  bottom: 0%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(90deg, #999, black);
+  position: relative;
+  animation: animate linear 20s infinite;
+}
+footer:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 200px solid transparent;
+  border-left: 200px solid #FFF;
+  opacity: 0.1;
+}
+
+footer:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 200px solid transparent;
+  border-right: 200px solid #FFF;
+  opacity: 0.1;
+}
+
+
+footer i:first-child {
+  font-size: 180%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  color: white;
+}
+footer i:nth-child(2) {
+  font-size: 180%;
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+  color: white;
+}
+footer i:nth-child(3){
+  font-size: 180%;
+  position: absolute;
+  bottom: 50%;
+  left: 60%;
+  color: white;
+}
+
+@keyframes animate{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+  100%{
+    filter: hue-rotate(0deg);
+  }
+}
